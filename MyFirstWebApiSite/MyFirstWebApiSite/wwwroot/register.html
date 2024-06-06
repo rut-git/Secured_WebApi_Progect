@@ -1,0 +1,54 @@
+﻿<!--<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Style/User.css" rel="stylesheet" />
+    <script src="../Scripts/user.js"></script>-->
+<!--<link href="User.css" rel="stylesheet" />-->
+<!--</head>
+<body >
+    <label>שם משתמש</label>
+    <input type="text" id="userName" />
+    <br /><br />
+    <label>סיסמא</label>
+    <input type="password" id="password" oninput="checkPassword()" />
+    <div id="strentgh"> </div>
+    <progress id="progress" value="0" max="4"></progress><br /><br />
+
+    <label>שם פרטי</label>
+    <input type="text" id="firstName" />
+    <br /><br />
+    <label>שם משפחה</label>
+    <input type="text" id="lastName" />
+    <br /><br />
+    <input type="button" value="רישום" onclick="register()" />
+</body>
+</html>-->
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>רישום משתמש</title>
+    <link href="../Style/User.css" rel="stylesheet" />
+    <script src="../Scripts/user.js"></script>
+</head>
+<body>
+    <label for="userName">שם משתמש</label>
+    <input type="text" id="userName" />
+    <br /><br />
+    <label for="password">סיסמא</label>
+    <input type="password" id="password" oninput="checkPassword()" />
+    <div id="strentgh"></div>
+    <progress id="progress" value="0" max="4"></progress><br /><br />
+
+    <label for="firstName">שם פרטי</label>
+    <input type="text" id="firstName" />
+    <br /><br />
+    <label for="lastName">שם משפחה</label>
+    <input type="text" id="lastName" />
+    <br /><br />
+    <input type="button" value="רישום" onclick="register()" />
+    <div id="validationMessages"></div> <!-- Section for validation messages -->
+</body>
+</html>

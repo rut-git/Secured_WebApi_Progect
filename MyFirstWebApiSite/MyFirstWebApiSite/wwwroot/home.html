@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Style/User.css" rel="stylesheet" />
+    <link href="../Style/Home.css" rel="stylesheet" />
+    <script src="../Scripts/user.js"></script>
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+</head>
+<body >
+    <h1>Home Page</h1>
+    <h3 id="result"></h3>
+    <br /><br />
+    <!--<a href="update.html">עדכון פרטים</a>-->
+    <a href="Products.html">לחנות</a>
+    <br/>
+    <a href="update.html">לעדכון פרטי משתמש</a>
+    <script>
+        document.getElementById("result").innerHTML = JSON.parse(sessionStorage.getItem("user")).firstname + " שלום  ";
+    </script>
+</body>
+</html>
